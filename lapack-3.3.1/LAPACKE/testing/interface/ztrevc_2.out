@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to ztrevc
+PASSED: column-major high-level interface to ztrevc
+PASSED: row-major middle-level interface to ztrevc
+PASSED: row-major high-level interface to ztrevc

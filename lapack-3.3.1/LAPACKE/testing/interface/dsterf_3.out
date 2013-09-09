@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to dsterf
+PASSED: column-major high-level interface to dsterf
+PASSED: row-major middle-level interface to dsterf
+PASSED: row-major high-level interface to dsterf

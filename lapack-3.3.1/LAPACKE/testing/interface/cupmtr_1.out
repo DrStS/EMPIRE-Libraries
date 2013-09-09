@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to cupmtr
+PASSED: column-major high-level interface to cupmtr
+PASSED: row-major middle-level interface to cupmtr
+PASSED: row-major high-level interface to cupmtr

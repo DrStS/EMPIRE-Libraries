@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to stprfs
+PASSED: column-major high-level interface to stprfs
+PASSED: row-major middle-level interface to stprfs
+PASSED: row-major high-level interface to stprfs

@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to dpbtrs
+PASSED: column-major high-level interface to dpbtrs
+PASSED: row-major middle-level interface to dpbtrs
+PASSED: row-major high-level interface to dpbtrs

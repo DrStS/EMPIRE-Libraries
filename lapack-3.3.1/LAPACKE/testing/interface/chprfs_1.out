@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to chprfs
+PASSED: column-major high-level interface to chprfs
+PASSED: row-major middle-level interface to chprfs
+PASSED: row-major high-level interface to chprfs

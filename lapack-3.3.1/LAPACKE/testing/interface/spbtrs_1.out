@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to spbtrs
+PASSED: column-major high-level interface to spbtrs
+PASSED: row-major middle-level interface to spbtrs
+PASSED: row-major high-level interface to spbtrs

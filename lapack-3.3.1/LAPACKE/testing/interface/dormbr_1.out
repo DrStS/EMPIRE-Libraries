@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to dormbr
+PASSED: column-major high-level interface to dormbr
+PASSED: row-major middle-level interface to dormbr
+PASSED: row-major high-level interface to dormbr

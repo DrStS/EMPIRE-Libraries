@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to dorghr
+PASSED: column-major high-level interface to dorghr
+PASSED: row-major middle-level interface to dorghr
+PASSED: row-major high-level interface to dorghr

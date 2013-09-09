@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to cgeqpf
+PASSED: column-major high-level interface to cgeqpf
+PASSED: row-major middle-level interface to cgeqpf
+PASSED: row-major high-level interface to cgeqpf

@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to ssytri
+PASSED: column-major high-level interface to ssytri
+PASSED: row-major middle-level interface to ssytri
+PASSED: row-major high-level interface to ssytri

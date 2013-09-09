@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to zsptrs
+PASSED: column-major high-level interface to zsptrs
+PASSED: row-major middle-level interface to zsptrs
+PASSED: row-major high-level interface to zsptrs

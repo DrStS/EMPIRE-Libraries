@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to dgelqf
+PASSED: column-major high-level interface to dgelqf
+PASSED: row-major middle-level interface to dgelqf
+PASSED: row-major high-level interface to dgelqf

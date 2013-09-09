@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to chetri
+PASSED: column-major high-level interface to chetri
+PASSED: row-major middle-level interface to chetri
+PASSED: row-major high-level interface to chetri

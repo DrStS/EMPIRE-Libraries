@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to sbdsqr
+PASSED: column-major high-level interface to sbdsqr
+PASSED: row-major middle-level interface to sbdsqr
+PASSED: row-major high-level interface to sbdsqr

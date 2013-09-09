@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to chptrd
+PASSED: column-major high-level interface to chptrd
+PASSED: row-major middle-level interface to chptrd
+PASSED: row-major high-level interface to chptrd

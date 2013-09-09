@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to cgetrf
+PASSED: column-major high-level interface to cgetrf
+PASSED: row-major middle-level interface to cgetrf
+PASSED: row-major high-level interface to cgetrf

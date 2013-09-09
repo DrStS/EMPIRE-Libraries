@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to cpotri
+PASSED: column-major high-level interface to cpotri
+PASSED: row-major middle-level interface to cpotri
+PASSED: row-major high-level interface to cpotri

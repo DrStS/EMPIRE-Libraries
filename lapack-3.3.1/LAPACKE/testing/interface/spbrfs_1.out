@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to spbrfs
+PASSED: column-major high-level interface to spbrfs
+PASSED: row-major middle-level interface to spbrfs
+PASSED: row-major high-level interface to spbrfs

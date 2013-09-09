@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to zhecon
+PASSED: column-major high-level interface to zhecon
+PASSED: row-major middle-level interface to zhecon
+PASSED: row-major high-level interface to zhecon

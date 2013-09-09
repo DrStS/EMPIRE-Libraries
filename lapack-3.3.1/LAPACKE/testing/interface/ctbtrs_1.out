@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to ctbtrs
+PASSED: column-major high-level interface to ctbtrs
+PASSED: row-major middle-level interface to ctbtrs
+PASSED: row-major high-level interface to ctbtrs

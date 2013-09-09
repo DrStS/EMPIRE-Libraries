@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to ssygst
+PASSED: column-major high-level interface to ssygst
+PASSED: row-major middle-level interface to ssygst
+PASSED: row-major high-level interface to ssygst

@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to ctrexc
+PASSED: column-major high-level interface to ctrexc
+PASSED: row-major middle-level interface to ctrexc
+PASSED: row-major high-level interface to ctrexc

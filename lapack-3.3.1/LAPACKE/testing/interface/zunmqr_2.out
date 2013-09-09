@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to zunmqr
+PASSED: column-major high-level interface to zunmqr
+PASSED: row-major middle-level interface to zunmqr
+PASSED: row-major high-level interface to zunmqr

@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to dtrsna
+PASSED: column-major high-level interface to dtrsna
+PASSED: row-major middle-level interface to dtrsna
+PASSED: row-major high-level interface to dtrsna

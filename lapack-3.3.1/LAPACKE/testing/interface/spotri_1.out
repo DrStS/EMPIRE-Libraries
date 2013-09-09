@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to spotri
+PASSED: column-major high-level interface to spotri
+PASSED: row-major middle-level interface to spotri
+PASSED: row-major high-level interface to spotri

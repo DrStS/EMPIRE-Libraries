@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to chegst
+PASSED: column-major high-level interface to chegst
+PASSED: row-major middle-level interface to chegst
+PASSED: row-major high-level interface to chegst

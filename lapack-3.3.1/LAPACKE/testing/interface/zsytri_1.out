@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to zsytri
+PASSED: column-major high-level interface to zsytri
+PASSED: row-major middle-level interface to zsytri
+PASSED: row-major high-level interface to zsytri

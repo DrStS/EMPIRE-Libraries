@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to sgehrd
+PASSED: column-major high-level interface to sgehrd
+PASSED: row-major middle-level interface to sgehrd
+PASSED: row-major high-level interface to sgehrd

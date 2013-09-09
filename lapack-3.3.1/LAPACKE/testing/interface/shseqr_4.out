@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to shseqr
+PASSED: column-major high-level interface to shseqr
+PASSED: row-major middle-level interface to shseqr
+PASSED: row-major high-level interface to shseqr

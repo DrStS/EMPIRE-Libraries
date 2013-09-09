@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to dtbrfs
+PASSED: column-major high-level interface to dtbrfs
+PASSED: row-major middle-level interface to dtbrfs
+PASSED: row-major high-level interface to dtbrfs

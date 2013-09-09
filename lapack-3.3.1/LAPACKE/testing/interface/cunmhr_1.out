@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to cunmhr
+PASSED: column-major high-level interface to cunmhr
+PASSED: row-major middle-level interface to cunmhr
+PASSED: row-major high-level interface to cunmhr

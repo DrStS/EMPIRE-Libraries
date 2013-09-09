@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to cgetri
+PASSED: column-major high-level interface to cgetri
+PASSED: row-major middle-level interface to cgetri
+PASSED: row-major high-level interface to cgetri

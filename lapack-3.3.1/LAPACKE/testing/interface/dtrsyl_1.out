@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to dtrsyl
+PASSED: column-major high-level interface to dtrsyl
+PASSED: row-major middle-level interface to dtrsyl
+PASSED: row-major high-level interface to dtrsyl

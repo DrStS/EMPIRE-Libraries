@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to dtpcon
+PASSED: column-major high-level interface to dtpcon
+PASSED: row-major middle-level interface to dtpcon
+PASSED: row-major high-level interface to dtpcon

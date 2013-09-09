@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to cupgtr
+PASSED: column-major high-level interface to cupgtr
+PASSED: row-major middle-level interface to cupgtr
+PASSED: row-major high-level interface to cupgtr

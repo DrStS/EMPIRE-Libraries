@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to zhptri
+PASSED: column-major high-level interface to zhptri
+PASSED: row-major middle-level interface to zhptri
+PASSED: row-major high-level interface to zhptri

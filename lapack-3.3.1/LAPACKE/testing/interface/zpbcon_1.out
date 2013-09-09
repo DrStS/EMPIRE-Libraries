@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to zpbcon
+PASSED: column-major high-level interface to zpbcon
+PASSED: row-major middle-level interface to zpbcon
+PASSED: row-major high-level interface to zpbcon

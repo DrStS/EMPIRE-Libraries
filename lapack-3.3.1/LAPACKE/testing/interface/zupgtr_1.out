@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to zupgtr
+PASSED: column-major high-level interface to zupgtr
+PASSED: row-major middle-level interface to zupgtr
+PASSED: row-major high-level interface to zupgtr

@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to zgbrfs
+PASSED: column-major high-level interface to zgbrfs
+PASSED: row-major middle-level interface to zgbrfs
+PASSED: row-major high-level interface to zgbrfs

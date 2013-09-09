@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to cgerfs
+PASSED: column-major high-level interface to cgerfs
+PASSED: row-major middle-level interface to cgerfs
+PASSED: row-major high-level interface to cgerfs

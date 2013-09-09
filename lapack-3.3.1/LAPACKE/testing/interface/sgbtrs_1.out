@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to sgbtrs
+PASSED: column-major high-level interface to sgbtrs
+PASSED: row-major middle-level interface to sgbtrs
+PASSED: row-major high-level interface to sgbtrs

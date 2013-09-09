@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to dstein
+PASSED: column-major high-level interface to dstein
+PASSED: row-major middle-level interface to dstein
+PASSED: row-major high-level interface to dstein

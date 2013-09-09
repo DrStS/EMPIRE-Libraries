@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to ztrcon
+PASSED: column-major high-level interface to ztrcon
+PASSED: row-major middle-level interface to ztrcon
+PASSED: row-major high-level interface to ztrcon

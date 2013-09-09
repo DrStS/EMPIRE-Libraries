@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to dpptrf
+PASSED: column-major high-level interface to dpptrf
+PASSED: row-major middle-level interface to dpptrf
+PASSED: row-major high-level interface to dpptrf

@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to dgecon
+PASSED: column-major high-level interface to dgecon
+PASSED: row-major middle-level interface to dgecon
+PASSED: row-major high-level interface to dgecon

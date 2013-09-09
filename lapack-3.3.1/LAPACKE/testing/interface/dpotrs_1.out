@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to dpotrs
+PASSED: column-major high-level interface to dpotrs
+PASSED: row-major middle-level interface to dpotrs
+PASSED: row-major high-level interface to dpotrs

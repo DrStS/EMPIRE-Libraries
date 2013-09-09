@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to stptri
+PASSED: column-major high-level interface to stptri
+PASSED: row-major middle-level interface to stptri
+PASSED: row-major high-level interface to stptri

@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to zunghr
+PASSED: column-major high-level interface to zunghr
+PASSED: row-major middle-level interface to zunghr
+PASSED: row-major high-level interface to zunghr

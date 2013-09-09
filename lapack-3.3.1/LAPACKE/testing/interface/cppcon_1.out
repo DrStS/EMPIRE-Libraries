@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to cppcon
+PASSED: column-major high-level interface to cppcon
+PASSED: row-major middle-level interface to cppcon
+PASSED: row-major high-level interface to cppcon

@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to sorgbr
+PASSED: column-major high-level interface to sorgbr
+PASSED: row-major middle-level interface to sorgbr
+PASSED: row-major high-level interface to sorgbr

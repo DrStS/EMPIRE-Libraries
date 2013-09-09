@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to dorgqr
+PASSED: column-major high-level interface to dorgqr
+PASSED: row-major middle-level interface to dorgqr
+PASSED: row-major high-level interface to dorgqr

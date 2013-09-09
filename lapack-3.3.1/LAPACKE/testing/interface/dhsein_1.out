@@ -1,0 +1,4 @@
+PASSED: column-major middle-level interface to dhsein
+PASSED: column-major high-level interface to dhsein
+PASSED: row-major middle-level interface to dhsein
+PASSED: row-major high-level interface to dhsein
