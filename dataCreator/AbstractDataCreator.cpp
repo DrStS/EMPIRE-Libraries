@@ -1,5 +1,6 @@
 #include "AbstractDataCreator.h"
 #include "mmsFunctions.h"
+#include "mmsFSI.h"
 #include "DataFieldFunctions.h"
 
 using namespace std;
@@ -203,6 +204,18 @@ AbstractDataCreator::AbstractDataCreator(int _numNodes, int _numElems, int _node
         funcXT = mmsFsi04TargetFX;
         funcYT = mmsFsi04TargetFY;
         funcZT = mmsFsi04TargetFZ;
+    } else if (function == "mmsFsi05TargetD") {
+        funcXT = mmsFsi05TargetDX;
+        funcYT = mmsFsi05TargetDY;
+        funcZT = mmsFsi05TargetDZ;
+    } else if (function == "mmsFsi05SourceF") {
+        funcXT = mmsFsi05SourceFX;
+        funcYT = mmsFsi05SourceFY;
+        funcZT = mmsFsi05SourceFZ;
+    } else if (function == "mmsFsi05TargetF") {
+        funcXT = mmsFsi05TargetFX;
+        funcYT = mmsFsi05TargetFY;
+        funcZT = mmsFsi05TargetFZ;
 
     } else if (function == "meshClientTurbomachinery") {
         funcX = meshClientTurbomachineryX;
