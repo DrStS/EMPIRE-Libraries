@@ -574,6 +574,7 @@ static double mmsStructure01TargetZ(double x, double y, double z) {
                       else{
                       return value;
                       }
+                      return 0;
              }
           static double mmsStructureMichl24SourceX(double x, double y, double z, double tau, double Lx, double Ly, double Thickness, double E, double nu, double rho, double Sprestress1, double Sprestress2, double bound) {
              double value=0.0;
@@ -621,6 +622,7 @@ static double mmsStructure01TargetZ(double x, double y, double z) {
                     else{
                     return value;
                     }
+                    return 0;
              }
 
 #endif /* MMSFUNCTIONS_H_ */
