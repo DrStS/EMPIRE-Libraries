@@ -1,6 +1,5 @@
 #include "AbstractDataCreator.h"
 #include "mmsFunctions.h"
-#include "mmsFSI.h"
 #include "DataFieldFunctions.h"
 
 using namespace std;
@@ -204,18 +203,6 @@ AbstractDataCreator::AbstractDataCreator(int _numNodes, int _numElems, int _node
         funcXT = mmsFsi04TargetFX;
         funcYT = mmsFsi04TargetFY;
         funcZT = mmsFsi04TargetFZ;
-    } else if (function == "mmsFsi05TargetD") {
-        funcXT = mmsFsi05TargetDX;
-        funcYT = mmsFsi05TargetDY;
-        funcZT = mmsFsi05TargetDZ;
-    } else if (function == "mmsFsi05SourceF") {
-        funcXT = mmsFsi05SourceFX;
-        funcYT = mmsFsi05SourceFY;
-        funcZT = mmsFsi05SourceFZ;
-    } else if (function == "mmsFsi05TargetF") {
-        funcXT = mmsFsi05TargetFX;
-        funcYT = mmsFsi05TargetFY;
-        funcZT = mmsFsi05TargetFZ;
 
     } else if (function == "meshClientTurbomachinery") {
         funcX = meshClientTurbomachineryX;
@@ -242,6 +229,14 @@ AbstractDataCreator::AbstractDataCreator(int _numNodes, int _numElems, int _node
         funcX = EmperorMapperTest_sphere_sin3xy;
         funcY = EmperorMapperTest_sphere_sin3xy;
         funcZ = EmperorMapperTest_sphere_sin3xy;
+    } else if (function == "EmperorMapperTest_quarterCylinder_surfaceNormal") {
+        funcX = EmperorMapperTest_quarterCylinder_surfaceNormal_x;
+        funcY = EmperorMapperTest_quarterCylinder_surfaceNormal_y;
+        funcZ = zeroFunction;
+    } else if (function == "EmperorMapperTest_bladeRotation90") {
+        funcX = EmperorMapperTest_bladeRotation90_x;
+        funcY = zeroFunction;
+        funcZ = EmperorMapperTest_bladeRotation90_z;
     } else {
         std::cerr << std::endl << "AbstractDataCreator:: wrong function type! "
                 << "function is called" << function << std::endl;

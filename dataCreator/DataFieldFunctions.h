@@ -6,6 +6,10 @@
 #include <stdlib.h>
 #include <string>
 
+static double zeroFunction(double x, double y, double z) {
+    return 0.0;
+}
+
 static double sinFunction(double x, double y, double z) {
     return sin(6.285 * x) + sin(6.285 * y) + sin(6.285 * z);
 }
@@ -123,6 +127,46 @@ static double EmperorMapperTest_sphere_sin4xy(double x, double y, double z) {
 
 static double EmperorMapperTest_sphere_sin3xy(double x, double y, double z) {
     return sin(3.0 * x * y);
+}
+
+static double EmperorMapperTest_quarterCylinder_surfaceNormal_x(double x, double y, double z) {
+    return -x;
+}
+
+static double EmperorMapperTest_quarterCylinder_surfaceNormal_y(double x, double y, double z) {
+    return -y;
+}
+
+static double EmperorMapperTest_bladeRotation90_x(double x, double y, double z) {
+    double r = sqrt(x * x + z * z);
+    double alpha;
+    if (fabs(x) < 1e-15)
+        if (z > 0.0)
+            alpha = M_PI / 2.0;
+        else
+            alpha = - M_PI / 2.0;
+    else if (x > 0)
+        alpha = atan(z/x);
+    else
+        alpha = atan(z/x) + M_PI;
+    alpha += M_PI / 2.0; // rotation angle
+    return r * cos(alpha) - x;
+}
+
+static double EmperorMapperTest_bladeRotation90_z(double x, double y, double z) {
+    double r = sqrt(x * x + z * z);
+    double alpha;
+    if (fabs(x) < 1e-15)
+        if (z > 0.0)
+            alpha = M_PI / 2.0;
+        else
+            alpha = - M_PI / 2.0;
+    else if (x > 0)
+        alpha = atan(z/x);
+    else
+        alpha = atan(z/x) + M_PI;
+    alpha += M_PI / 2.0; // rotation angle
+    return r * sin(alpha) - z;
 }
 
 #endif /* DATAFIELDFUNCTIONS_H_ */
