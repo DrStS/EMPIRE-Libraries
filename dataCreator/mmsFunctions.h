@@ -1,20 +1,25 @@
 #ifndef MMSFUNCTIONS_H_
 #define MMSFUNCTIONS_H_
 
-#include <iostream>
-#define _USE_MATH_DEFINES
-#include <math.h>
-#include <stdlib.h>
-#include <string>
 
+#ifndef M_PI
+#define M_PI 3.14159265358979323846
+#endif
+
+#include <iostream>
+#include <string>
+#include <math.h>
 using namespace std;
 
-bool isnormal(double value); // Defined by St.S to avoid compile error --> Please fix that
+#if defined(_MSC_VER)
+bool isnormal(double value){
+return 1;
+}
+#endif
 
 
 static double mmsStructureCSourceX(double x, double y, double z) {
     double value=0.0;
-        //value=0.02255;
     return value;
 }
 static double mmsStructureCSourceY(double x, double y, double z) {
