@@ -2,11 +2,14 @@
 #define MMSFUNCTIONS_H_
 
 #include <iostream>
+#define _USE_MATH_DEFINES
 #include <math.h>
 #include <stdlib.h>
 #include <string>
 
 using namespace std;
+
+bool isnormal(double value); // Defined by St.S to avoid compile error --> Please fix that
 
 
 static double mmsStructureCSourceX(double x, double y, double z) {
