@@ -168,7 +168,6 @@ static double EmperorMapperTest_bladeRotation90_z(double x, double y, double z) 
     alpha += M_PI / 2.0; // rotation angle
     return r * sin(alpha) - z;
 }
-//altug
 static double WindTurbine_Parabola_Y(double x, double y, double z) {
 // for NREL UAE Phase VI Windturbine
 	double uMax = 0.1;
@@ -200,6 +199,5 @@ static double WindTurbine_Parabola_T(double space, int timestep) {
     }
     return deltaXYZofT;
 }
-// altug end
 
 #endif /* DATAFIELDFUNCTIONS_H_ */
