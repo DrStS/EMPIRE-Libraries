@@ -168,5 +168,38 @@ static double EmperorMapperTest_bladeRotation90_z(double x, double y, double z) 
     alpha += M_PI / 2.0; // rotation angle
     return r * sin(alpha) - z;
 }
+//altug
+static double WindTurbine_Parabola_Y(double x, double y, double z) {
+// for NREL UAE Phase VI Windturbine
+	double uMax = 0.1;
+	double xMin = 0.32; // > 0 !!!
+	double xMax = 5.029; // > 0 !!!
+	int n_tsteps = 500;
+	double dt = 1e-3;
+	double deltaY;
+	double p = pow(xMax-xMin,2)/(4*uMax/n_tsteps/dt);
+
+	    if ((x >= xMin) && (x <= xMax)) {
+	    	deltaY = - pow(x-xMin,2)/(4*p);
+	    } else if ((x <= -xMin) && (x >= -xMax)) {
+	        x = -x;
+	        deltaY = - pow(x-xMin,2)/(4*p);
+	    } else {
+	        deltaY = 0;
+	    }
+	    return deltaY;
+}
+static double WindTurbine_Parabola_T(double space, int timestep) {
+    double timestepfac = 0.001;
+    double deltaXYZofT;
+
+    if (timestep <= 0) {
+        deltaXYZofT = 0;
+    } else {
+        deltaXYZofT = space * timestep * timestepfac;
+    }
+    return deltaXYZofT;
+}
+// altug end
 
 #endif /* DATAFIELDFUNCTIONS_H_ */
