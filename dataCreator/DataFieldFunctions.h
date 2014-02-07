@@ -200,4 +200,36 @@ static double WindTurbine_Parabola_T(double space, int timestep) {
     return deltaXYZofT;
 }
 
+static double ElectraDashWing_Parabola_Z(double x, double y, double z) {
+// for NREL UAE Phase VI Windturbine
+	double wMax = 2000.0;
+	double yMin = 1727.0; // > 0 !!!
+	double yMax = 12955.0; // > 0 !!!
+	int n_tsteps = 500;
+	double dt = 1e-3;
+	double deltaZ;
+	double p = pow(yMax-yMin,2)/(4*wMax/n_tsteps/dt);
+
+	    if ((y >= yMin) && (y <= yMax)) {
+	    	deltaZ =  pow(y-yMin,2)/(4*p);
+	    } else if ((y <= -yMin) && (y >= -yMax)) {
+	        y = -y;
+	        deltaZ =  pow(y-yMin,2)/(4*p);
+	    } else {
+	        deltaZ = 0;
+	    }
+	    return deltaZ;
+}
+static double ElectraDashWing_Parabola_T(double space, int timestep) {
+    double timestepfac = 0.001;
+    double deltaXYZofT;
+
+    if (timestep <= 0) {
+        deltaXYZofT = 0;
+    } else {
+        deltaXYZofT = space * timestep * timestepfac;
+    }
+    return deltaXYZofT;
+}
+
 #endif /* DATAFIELDFUNCTIONS_H_ */

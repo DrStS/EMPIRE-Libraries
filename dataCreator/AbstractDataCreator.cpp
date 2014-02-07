@@ -255,6 +255,11 @@ AbstractDataCreator::AbstractDataCreator(int _numNodes, int _numElems, int _node
     	funcY = WindTurbine_Parabola_Y;
     	funcZ = zeroFunction;
     	funcT = WindTurbine_Parabola_T;
+    } else if (function == "ElectraDashWing_Parabola") {
+    	funcX = zeroFunction;
+    	funcY = zeroFunction;
+    	funcZ = ElectraDashWing_Parabola_Z;
+    	funcT = ElectraDashWing_Parabola_T;
     } else {
         std::cerr << std::endl << "AbstractDataCreator:: wrong function type! "
                 << "function is called" << function << std::endl;
