@@ -40,9 +40,9 @@ distribution.
 #include <assert.h>
 
 // Help out windows:
-#if defined( _DEBUG ) && !defined( DEBUG )
-#define DEBUG
-#endif
+//#if defined( _DEBUG ) && !defined( DEBUG )
+//#define DEBUG
+//#endif
 
 #ifdef TIXML_USE_TICPP
 	#ifndef TIXML_USE_STL

@@ -346,6 +346,16 @@ AbstractDataCreator::AbstractDataCreator(int _numNodes, int _numElems, int _node
         funcX = EmperorMapperTest_bladeRotation90_x;
         funcY = zeroFunction;
         funcZ = EmperorMapperTest_bladeRotation90_z;
+    } else if (function == "WindTurbine_Parabola") {
+    	funcX = zeroFunction;
+    	funcY = WindTurbine_Parabola_Y;
+    	funcZ = zeroFunction;
+    	funcT = WindTurbine_Parabola_T;
+    } else if (function == "ElectraDashWing_Parabola") {
+    	funcX = zeroFunction;
+    	funcY = zeroFunction;
+    	funcZ = ElectraDashWing_Parabola_Z;
+    	funcT = ElectraDashWing_Parabola_T;
     } else {
         std::cerr << std::endl << "AbstractDataCreator:: wrong function type! "
                 << "function is called" << function << std::endl;

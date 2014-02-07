@@ -168,5 +168,68 @@ static double EmperorMapperTest_bladeRotation90_z(double x, double y, double z) 
     alpha += M_PI / 2.0; // rotation angle
     return r * sin(alpha) - z;
 }
+static double WindTurbine_Parabola_Y(double x, double y, double z) {
+// for NREL UAE Phase VI Windturbine
+	double uMax = 0.1;
+	double xMin = 0.32; // > 0 !!!
+	double xMax = 5.029; // > 0 !!!
+	int n_tsteps = 500;
+	double dt = 1e-3;
+	double deltaY;
+	double p = pow(xMax-xMin,2)/(4*uMax/n_tsteps/dt);
+
+	    if ((x >= xMin) && (x <= xMax)) {
+	    	deltaY = - pow(x-xMin,2)/(4*p);
+	    } else if ((x <= -xMin) && (x >= -xMax)) {
+	        x = -x;
+	        deltaY = - pow(x-xMin,2)/(4*p);
+	    } else {
+	        deltaY = 0;
+	    }
+	    return deltaY;
+}
+static double WindTurbine_Parabola_T(double space, int timestep) {
+    double timestepfac = 0.001;
+    double deltaXYZofT;
+
+    if (timestep <= 0) {
+        deltaXYZofT = 0;
+    } else {
+        deltaXYZofT = space * timestep * timestepfac;
+    }
+    return deltaXYZofT;
+}
+
+static double ElectraDashWing_Parabola_Z(double x, double y, double z) {
+// for NREL UAE Phase VI Windturbine
+	double wMax = 2000.0;
+	double yMin = 1727.0; // > 0 !!!
+	double yMax = 12955.0; // > 0 !!!
+	int n_tsteps = 500;
+	double dt = 1e-3;
+	double deltaZ;
+	double p = pow(yMax-yMin,2)/(4*wMax/n_tsteps/dt);
+
+	    if ((y >= yMin) && (y <= yMax)) {
+	    	deltaZ =  pow(y-yMin,2)/(4*p);
+	    } else if ((y <= -yMin) && (y >= -yMax)) {
+	        y = -y;
+	        deltaZ =  pow(y-yMin,2)/(4*p);
+	    } else {
+	        deltaZ = 0;
+	    }
+	    return deltaZ;
+}
+static double ElectraDashWing_Parabola_T(double space, int timestep) {
+    double timestepfac = 0.001;
+    double deltaXYZofT;
+
+    if (timestep <= 0) {
+        deltaXYZofT = 0;
+    } else {
+        deltaXYZofT = space * timestep * timestepfac;
+    }
+    return deltaXYZofT;
+}
 
 #endif /* DATAFIELDFUNCTIONS_H_ */

@@ -1,4 +1,5 @@
 #------------------------------------------------------------------------------------#
+IF (CMAKE_SYSTEM_NAME MATCHES "Linux")
 ExternalProject_Add(flann
 	SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/flann-1.7.1-src
 	BINARY_DIR ${CMAKE_CURRENT_SOURCE_DIR}/flann-1.7.1-src/build
@@ -7,6 +8,22 @@ ExternalProject_Add(flann
 	BUILD_COMMAND $(MAKE)
 	INSTALL_COMMAND cp ${CMAKE_CURRENT_SOURCE_DIR}/flann-1.7.1-src/build/lib/libflann_cpp_s.a ${CMAKE_CURRENT_SOURCE_DIR}/lib/libflann_cpp_s.a
 )
+ENDIF()
+
+SET(ENV{TEST} ${CMAKE_CURRENT_SOURCE_DIR})
+
+IF (CMAKE_SYSTEM_NAME MATCHES "Windows")
+ExternalProject_Add(flann
+	SOURCE_DIR ${CMAKE_CURRENT_SOURCE_DIR}/flann-1.7.1-src
+	BINARY_DIR ${CMAKE_CURRENT_SOURCE_DIR}/flann-1.7.1-src/build
+	INSTALL_DIR ${CMAKE_CURRENT_SOURCE_DIR}/lib
+	CONFIGURE_COMMAND cmake -G "NMake Makefiles" -D BUILD_C_BINDINGS=OFF -D CMAKE_INSTALL_PREFIX=${CMAKE_CURRENT_SOURCE_DIR}/lib ..
+    BUILD_COMMAND nmake
+    INSTALL_COMMAND cd ${CMAKE_CURRENT_SOURCE_DIR}/flann-1.7.1-src/build/lib/ && copy flann_cpp_s.lib ..\\..\\..\\lib
+)
+ENDIF()
+
+
 #------------------------------------------------------------------------------------#
 FILE(GLOB EMPIRE_API_SOURCES_src_subdirectories "*")
 FOREACH(f ${EMPIRE_API_SOURCES_src_subdirectories})
@@ -18,9 +35,9 @@ add_subdirectory(ticpp) # TODO
 add_subdirectory(cppunit)
 add_subdirectory(dataCreator)
 #------------------------------------------------------------------------------------#
-IF (${USE_INTEL_COMPILERS_AND_MKL})
-	SET (CMAKE_C_COMPILER "icc")
-	SET (CMAKE_CXX_COMPILER "icpc")
+IF (${USE_INTEL_COMPILERS_MKL_IMPI_LINUX})
+  SET (CMAKE_C_COMPILER "icc")
+  SET (CMAKE_CXX_COMPILER "icpc")
 ENDIF()
 #------------------------------------------------------------------------------------#
 ExternalProject_Get_Property(flann SOURCE_DIR)
@@ -37,8 +54,14 @@ add_definitions(-DNDEBUG)
 #------------------------------------------------------------------------------------#
 # Needed because Cmake does add it automatically only for shared libraries
 # Cmake considers static libs as archives and not as a library
-SET (CMAKE_C_FLAGS "-fPIC")
-SET (CMAKE_CXX_FLAGS "-fPIC")
+IF (CMAKE_SYSTEM_NAME MATCHES "Linux")
+  SET (CMAKE_C_FLAGS "-fPIC")
+  SET (CMAKE_CXX_FLAGS "-fPIC")
+ENDIF()
+IF (CMAKE_SYSTEM_NAME MATCHES "Windows")
+  SET (CMAKE_C_FLAGS "${CMAKE_C_FLAGS} /EHsc")
+  SET (CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} /EHsc")
+ENDIF()
 #------------------------------------------------------------------------------------#
 add_library(EMPIRE_thirdparty OBJECT ${EMPIRE_thirdparty_SOURCES})
 #------------------------------------------------------------------------------------#
