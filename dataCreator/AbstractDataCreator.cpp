@@ -216,6 +216,102 @@ AbstractDataCreator::AbstractDataCreator(int _numNodes, int _numElems, int _node
         funcXT = mmsFsi05TargetFX;
         funcYT = mmsFsi05TargetFY;
         funcZT = mmsFsi05TargetFZ;
+    } else if (function == "mmsFsi06TargetD") {
+        funcXT = mmsFsi06TargetDX;
+        funcYT = mmsFsi06TargetDY;
+        funcZT = mmsFsi06TargetDZ;
+    } else if (function == "mmsFsi06SourceF") {
+        funcXT = mmsFsi06SourceFX;
+        funcYT = mmsFsi06SourceFY;
+        funcZT = mmsFsi06SourceFZ;
+    } else if (function == "mmsFsi06TargetF") {
+        funcXT = mmsFsi06TargetFX;
+        funcYT = mmsFsi06TargetFY;
+        funcZT = mmsFsi06TargetFZ;
+    } else if (function == "mmsFsi06aTargetD") {
+        funcXT = mmsFsi06aTargetDX;
+        funcYT = mmsFsi06aTargetDY;
+        funcZT = mmsFsi06aTargetDZ;
+    } else if (function == "mmsFsi06aSourceF") {
+        funcXT = mmsFsi06aSourceFX;
+        funcYT = mmsFsi06aSourceFY;
+        funcZT = mmsFsi06aSourceFZ;
+    } else if (function == "mmsFsi06aTargetF") {
+        funcXT = mmsFsi06aTargetFX;
+        funcYT = mmsFsi06aTargetFY;
+        funcZT = mmsFsi06aTargetFZ;
+    } else if (function == "mmsFsi31TargetD") {
+        funcXT = mmsFsi31TargetDX;
+        funcYT = mmsFsi31TargetDY;
+        funcZT = mmsFsi31TargetDZ;
+    } else if (function == "mmsFsi31SourceF") {
+        funcXT = mmsFsi31SourceFX;
+        funcYT = mmsFsi31SourceFY;
+        funcZT = mmsFsi31SourceFZ;
+    } else if (function == "mmsFsi31TargetF") {
+        funcXT = mmsFsi31TargetFX;
+        funcYT = mmsFsi31TargetFY;
+        funcZT = mmsFsi31TargetFZ;
+    } else if (function == "mmsFsi32TargetD") {
+        funcXT = mmsFsi32TargetDX;
+        funcYT = mmsFsi32TargetDY;
+        funcZT = mmsFsi32TargetDZ;
+    } else if (function == "mmsFsi32SourceF") {
+        funcXT = mmsFsi32SourceFX;
+        funcYT = mmsFsi32SourceFY;
+        funcZT = mmsFsi32SourceFZ;
+    } else if (function == "mmsFsi32TargetF") {
+        funcXT = mmsFsi32TargetFX;
+        funcYT = mmsFsi32TargetFY;
+        funcZT = mmsFsi32TargetFZ;
+    } else if (function == "mmsFsi33TargetD") {
+        funcXT = mmsFsi33TargetDX;
+        funcYT = mmsFsi33TargetDY;
+        funcZT = mmsFsi33TargetDZ;
+    } else if (function == "mmsFsi33SourceF") {
+        funcXT = mmsFsi33SourceFX;
+        funcYT = mmsFsi33SourceFY;
+        funcZT = mmsFsi33SourceFZ;
+    } else if (function == "mmsFsi33TargetF") {
+        funcXT = mmsFsi33TargetFX;
+        funcYT = mmsFsi33TargetFY;
+        funcZT = mmsFsi33TargetFZ;
+    } else if (function == "mmsFsi34TargetD") {
+        funcXT = mmsFsi34TargetDX;
+        funcYT = mmsFsi34TargetDY;
+        funcZT = mmsFsi34TargetDZ;
+    } else if (function == "mmsFsi34SourceF") {
+        funcXT = mmsFsi34SourceFX;
+        funcYT = mmsFsi34SourceFY;
+        funcZT = mmsFsi34SourceFZ;
+    } else if (function == "mmsFsi34TargetF") {
+        funcXT = mmsFsi34TargetFX;
+        funcYT = mmsFsi34TargetFY;
+        funcZT = mmsFsi34TargetFZ;
+    } else if (function == "mmsFsi35TargetD") {
+        funcXT = mmsFsi35TargetDX;
+        funcYT = mmsFsi35TargetDY;
+        funcZT = mmsFsi35TargetDZ;
+    } else if (function == "mmsFsi35SourceF") {
+        funcXT = mmsFsi35SourceFX;
+        funcYT = mmsFsi35SourceFY;
+        funcZT = mmsFsi35SourceFZ;
+    } else if (function == "mmsFsi35TargetF") {
+        funcXT = mmsFsi35TargetFX;
+        funcYT = mmsFsi35TargetFY;
+        funcZT = mmsFsi35TargetFZ;
+    } else if (function == "mmsFsi51TargetD") {
+        funcXT = mmsFsi51TargetDX;
+        funcYT = mmsFsi51TargetDY;
+        funcZT = mmsFsi51TargetDZ;
+    } else if (function == "mmsFsi51SourceF") {
+        funcXT = mmsFsi51SourceFX;
+        funcYT = mmsFsi51SourceFY;
+        funcZT = mmsFsi51SourceFZ;
+    } else if (function == "mmsFsi51TargetF") {
+        funcXT = mmsFsi51TargetFX;
+        funcYT = mmsFsi51TargetFY;
+        funcZT = mmsFsi51TargetFZ;
 
     } else if (function == "meshClientTurbomachinery") {
         funcX = meshClientTurbomachineryX;
