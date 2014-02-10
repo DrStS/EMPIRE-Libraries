@@ -545,9 +545,6 @@ static double mmsFsi51SourceFZ(double x, double y, double z, double tau) {
 	double pi=M_PI;
 	double t = tau;
     return -0.100000e-1 * pow(cos(0.3141592654e1 * x), 0.2e1) * 0.3141592654e1 * 0.3141592654e1 * pow(sin(0.3141592654e1 * tau), 0.2e1) * pow(tau, 0.4e1) * sin(x + sin(0.3141592654e1 * x) * sin(0.3141592654e1 * tau) * tau * tau + z) * pow(pow(cos(0.3141592654e1 * x), 0.2e1) * 0.3141592654e1 * 0.3141592654e1 * pow(sin(0.3141592654e1 * tau), 0.2e1) * pow(tau, 0.4e1) + 0.1e1, -0.1e1 / 0.2e1) - 0.100000e-1 * sin(x + sin(0.3141592654e1 * x) * sin(0.3141592654e1 * tau) * tau * tau + z) * pow(pow(cos(0.3141592654e1 * x), 0.2e1) * 0.3141592654e1 * 0.3141592654e1 * pow(sin(0.3141592654e1 * tau), 0.2e1) * pow(tau, 0.4e1) + 0.1e1, -0.1e1 / 0.2e1);
-
-
-
 	}
 //STRUCTURE DISP TARGET
 static double mmsFsi51TargetDX(double x, double y, double z, double tau) {
@@ -580,6 +577,62 @@ static double mmsFsi51TargetFZ(double x, double y, double z, double tau) {
 	double pi=M_PI;
 	double t=tau;
     return 0.100000e-1 * pow(cos(pi * x), 0.2e1) * pi * pi * pow(sin(pi * t), 0.2e1) * pow(t, 0.4e1) * pow(pow(cos(pi * x), 0.2e1) * pi * pi * pow(sin(pi * t), 0.2e1) * pow(t, 0.4e1) + 0.1e1, -0.1e1 / 0.2e1) * sin(x + sin(pi * x) * sin(pi * t) * t * t + z) + 0.100000e-1 * pow(pow(cos(pi * x), 0.2e1) * pi * pi * pow(sin(pi * t), 0.2e1) * pow(t, 0.4e1) + 0.1e1, -0.1e1 / 0.2e1) * sin(x + sin(pi * x) * sin(pi * t) * t * t + z);
+
+	}
+
+//52
+//STRUCTURE/FSI SOURCE FORCE
+static double mmsFsi52SourceFX(double x, double y, double z, double tau) {
+	double pi=M_PI;
+    double t = tau;
+    return (0.50000e3 - 0.1333333333e-2 * sin(x + sin(0.3141592654e1 * x) * sin(0.3141592654e1 * tau) * tau * tau + z) * cos(0.3141592654e1 * x) * 0.3141592654e1 * sin(0.3141592654e1 * tau) * tau * tau) * cos(0.3141592654e1 * x) * 0.3141592654e1 * sin(0.3141592654e1 * tau) * tau * tau * pow(pow(cos(0.3141592654e1 * x), 0.2e1) * 0.3141592654e1 * 0.3141592654e1 * pow(sin(0.3141592654e1 * tau), 0.2e1) * pow(tau, 0.4e1) + 0.1e1, -0.1e1 / 0.2e1) - (0.100000e-2 * sin(x + sin(0.3141592654e1 * x) * sin(0.3141592654e1 * tau) * tau * tau + z) + 0.100000e-1 * cos(0.3141592654e1 * x) * 0.3141592654e1 * 0.3141592654e1 * cos(0.3141592654e1 * tau) * tau * tau + 0.200000e-1 * cos(0.3141592654e1 * x) * 0.3141592654e1 * sin(0.3141592654e1 * tau) * tau) * pow(pow(cos(0.3141592654e1 * x), 0.2e1) * 0.3141592654e1 * 0.3141592654e1 * pow(sin(0.3141592654e1 * tau), 0.2e1) * pow(tau, 0.4e1) + 0.1e1, -0.1e1 / 0.2e1);
+
+	}
+static double mmsFsi52SourceFY(double x, double y, double z, double tau) {
+	double pi=M_PI;
+	double t = tau;
+	return -0.10000000e4 * sin(pi * x) * sin(pi * tau) * pi * pi * tau * tau + 0.40000000e4 * sin(pi * x) * cos(pi * tau) * pi * tau + 0.20000000e4 * sin(pi * x) * sin(pi * tau) + (0.100000e-2 * sin(x + sin(0.3141592654e1 * x) * sin(0.3141592654e1 * tau) * tau * tau + z) + 0.100000e-1 * cos(0.3141592654e1 * x) * 0.3141592654e1 * 0.3141592654e1 * cos(0.3141592654e1 * tau) * tau * tau + 0.200000e-1 * cos(0.3141592654e1 * x) * 0.3141592654e1 * sin(0.3141592654e1 * tau) * tau) * cos(0.3141592654e1 * x) * 0.3141592654e1 * sin(0.3141592654e1 * tau) * tau * tau * pow(pow(cos(0.3141592654e1 * x), 0.2e1) * 0.3141592654e1 * 0.3141592654e1 * pow(sin(0.3141592654e1 * tau), 0.2e1) * pow(tau, 0.4e1) + 0.1e1, -0.1e1 / 0.2e1) - (0.50000e3 + 0.6666666667e-3 * sin(x + sin(0.3141592654e1 * x) * sin(0.3141592654e1 * tau) * tau * tau + z) * cos(0.3141592654e1 * x) * 0.3141592654e1 * sin(0.3141592654e1 * tau) * tau * tau) * pow(pow(cos(0.3141592654e1 * x), 0.2e1) * 0.3141592654e1 * 0.3141592654e1 * pow(sin(0.3141592654e1 * tau), 0.2e1) * pow(tau, 0.4e1) + 0.1e1, -0.1e1 / 0.2e1);
+
+
+
+    }
+static double mmsFsi52SourceFZ(double x, double y, double z, double tau) {
+	double pi=M_PI;
+	double t = tau;
+    return -0.100000e-2 * pow(cos(0.3141592654e1 * x), 0.2e1) * 0.3141592654e1 * 0.3141592654e1 * pow(sin(0.3141592654e1 * tau), 0.2e1) * pow(tau, 0.4e1) * sin(x + sin(0.3141592654e1 * x) * sin(0.3141592654e1 * tau) * tau * tau + z) * pow(pow(cos(0.3141592654e1 * x), 0.2e1) * 0.3141592654e1 * 0.3141592654e1 * pow(sin(0.3141592654e1 * tau), 0.2e1) * pow(tau, 0.4e1) + 0.1e1, -0.1e1 / 0.2e1) - 0.100000e-2 * sin(x + sin(0.3141592654e1 * x) * sin(0.3141592654e1 * tau) * tau * tau + z) * pow(pow(cos(0.3141592654e1 * x), 0.2e1) * 0.3141592654e1 * 0.3141592654e1 * pow(sin(0.3141592654e1 * tau), 0.2e1) * pow(tau, 0.4e1) + 0.1e1, -0.1e1 / 0.2e1);
+
+	}
+//STRUCTURE DISP TARGET
+static double mmsFsi52TargetDX(double x, double y, double z, double tau) {
+	double value=0;
+	return value;
+	}
+static double mmsFsi52TargetDY(double x, double y, double z, double tau) {
+    double pi = M_PI;
+	double t = tau;
+	return sin(pi * x) * sin(pi * t) * t * t;
+    }
+static double mmsFsi52TargetDZ(double x, double y, double z, double tau) {
+    double pi=M_PI;
+	return 0;
+    }
+//FLUID FORCE TARGET
+static double mmsFsi52TargetFX(double x, double y, double z, double tau) {
+    double pi=M_PI;
+    double t=tau;
+	return  -(0.50000e3 - 0.1333333333e-2 * sin(x + sin(pi * x) * sin(pi * t) * t * t + z) * cos(pi * x) * pi * sin(pi * t) * t * t) * cos(pi * x) * pi * sin(pi * t) * t * t * pow(pow(cos(pi * x), 0.2e1) * pi * pi * pow(sin(pi * t), 0.2e1) * pow(t, 0.4e1) + 0.1e1, -0.1e1 / 0.2e1) + (0.100000e-2 * sin(x + sin(pi * x) * sin(pi * t) * t * t + z) + 0.100000e-1 * cos(pi * x) * pi * pi * cos(pi * t) * t * t + 0.200000e-1 * cos(pi * x) * pi * sin(pi * t) * t) * pow(pow(cos(pi * x), 0.2e1) * pi * pi * pow(sin(pi * t), 0.2e1) * pow(t, 0.4e1) + 0.1e1, -0.1e1 / 0.2e1);
+
+    }
+static double mmsFsi52TargetFY(double x, double y, double z, double tau) {
+	double pi=M_PI;
+	double t=tau;
+	return -(0.100000e-2 * sin(x + sin(pi * x) * sin(pi * t) * t * t + z) + 0.100000e-1 * cos(pi * x) * pi * pi * cos(pi * t) * t * t + 0.200000e-1 * cos(pi * x) * pi * sin(pi * t) * t) * cos(pi * x) * pi * sin(pi * t) * t * t * pow(pow(cos(pi * x), 0.2e1) * pi * pi * pow(sin(pi * t), 0.2e1) * pow(t, 0.4e1) + 0.1e1, -0.1e1 / 0.2e1) + (0.50000e3 + 0.6666666667e-3 * sin(x + sin(pi * x) * sin(pi * t) * t * t + z) * cos(pi * x) * pi * sin(pi * t) * t * t) * pow(pow(cos(pi * x), 0.2e1) * pi * pi * pow(sin(pi * t), 0.2e1) * pow(t, 0.4e1) + 0.1e1, -0.1e1 / 0.2e1);
+
+	}
+static double mmsFsi52TargetFZ(double x, double y, double z, double tau) {
+	double pi=M_PI;
+	double t=tau;
+    return 0.100000e-2 * pow(cos(pi * x), 0.2e1) * pi * pi * pow(sin(pi * t), 0.2e1) * pow(t, 0.4e1) * pow(pow(cos(pi * x), 0.2e1) * pi * pi * pow(sin(pi * t), 0.2e1) * pow(t, 0.4e1) + 0.1e1, -0.1e1 / 0.2e1) * sin(x + sin(pi * x) * sin(pi * t) * t * t + z) + 0.100000e-2 * pow(pow(cos(pi * x), 0.2e1) * pi * pi * pow(sin(pi * t), 0.2e1) * pow(t, 0.4e1) + 0.1e1, -0.1e1 / 0.2e1) * sin(x + sin(pi * x) * sin(pi * t) * t * t + z);
 
 	}
 

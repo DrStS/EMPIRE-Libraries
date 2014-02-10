@@ -312,6 +312,19 @@ AbstractDataCreator::AbstractDataCreator(int _numNodes, int _numElems, int _node
         funcXT = mmsFsi51TargetFX;
         funcYT = mmsFsi51TargetFY;
         funcZT = mmsFsi51TargetFZ;
+    } else if (function == "mmsFsi52TargetD") {
+         funcXT = mmsFsi52TargetDX;
+         funcYT = mmsFsi52TargetDY;
+         funcZT = mmsFsi52TargetDZ;
+     } else if (function == "mmsFsi52SourceF") {
+         funcXT = mmsFsi52SourceFX;
+         funcYT = mmsFsi52SourceFY;
+         funcZT = mmsFsi52SourceFZ;
+     } else if (function == "mmsFsi52TargetF") {
+         funcXT = mmsFsi52TargetFX;
+         funcYT = mmsFsi52TargetFY;
+         funcZT = mmsFsi52TargetFZ;
+
 
     } else if (function == "meshClientTurbomachinery") {
         funcX = meshClientTurbomachineryX;
